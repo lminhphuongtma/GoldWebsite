@@ -8,43 +8,44 @@ function PricingTable({ onRegisterClick }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
-              title: 'GOLD BASIC',
+              title: 'GOLD',
               subtitle: 'Phù hợp cho cửa hàng vàng nhỏ',
-              price: '200.000',
-              extra: 'Thêm 1 tài khoản: 150.000đ/tháng',
+              price: '270.000',
+              extra: 'Thêm 1 tài khoản: 10.000đ/tháng',
               features: [
-                'Lưu trữ đám mây - GOLD SAFE',
-                'Quản lý sản phẩm vàng, trang sức',
-                'Quản lý khách hàng cơ bản',
-                'Kiểm kho nhanh',
-                'Nhập/xuất dữ liệu Excel',
+                'Bảng giá Tivi',
+                'In tem trang sức chuẩn thông tư 22',
+                'Cầm vàng theo nghị định 144/2021/NĐ-CP lưu trữ thông tin khách cầm, hợp đồng',
+                'Phân quyền nhân viên, tra cứu khoản vay, mất giấy, đóng lãi ',
+                'Đồng bộ giá vàng các thiết bị',
+                'Gợi ý giá cầm theo trọng lượng và loại vàng'
               ],
             },
             {
-              title: 'GOLD PRO',
+                title: 'PLATINUM',
               subtitle: 'Phù hợp cho cửa hàng vàng phát triển',
-              price: '500.000',
-              extra: 'Thêm 1 tài khoản: 350.000đ/tháng',
+              price: '570.000',
+              extra: 'Thêm 1 tài khoản: 20.000đ/tháng',
               features: [
-                'Gồm các chức năng GOLD BASIC',
-                'Mua/bán trực tuyến (lẻ)',
-                'Quản lý thông tin kinh doanh đa quy định',
-                'Đo độ chính xác giá vàng',
-                'Lưu trữ tin tức bằng mã QR',
-                'Hỗ trợ tem thẻ RFID',
+                'Gồm các chức năng GOLD',
+                'Mua/bán/đổi vàng, bạch kim',
+                'Xuất hóa đơn điện tử của Viettel',
+                'Tổng kết thu/chi theo từng nhân viên',
+                'Đổi hàng linh động theo giá bù vàng',
+
               ],
             },
             {
-              title: 'GOLD PREMIUM',
+              title: 'DIAMOND',
               subtitle: 'Phù hợp cho cửa hàng vàng cao cấp',
-              price: '1.000.000',
-              extra: 'Thêm 1 tài khoản: 700.000đ/tháng',
+              price: '870.000',
+              extra: 'Thêm 1 tài khoản: 30.000đ/tháng',
               features: [
-                'Gồm các chức năng GOLD PRO',
-                'Quản lý hình ảnh sản phẩm cao cấp',
-                'Xuất báo cáo tài chính chi tiết',
-                'Hỗ trợ hội viên VIP',
-                'Phân tích dữ liệu kinh doanh',
+                'Gồm các chức năng PLATINUM',
+                'Mua/bán/đổi trực tuyến vàng, bạch kim, Kim Cương',
+                'Hình ảnh sản phẩm bán ra rõ ràng',
+                'Mở rộng thiết bị in từ xa',
+                'Hỗ trợ 24/7'
               ],
             },
           ].map((plan, idx) => (
@@ -58,7 +59,7 @@ function PricingTable({ onRegisterClick }) {
                 <p className="text-4xl font-bold text-[#1A4FA3] mt-4">
                   {plan.price} <span className="text-base">đ</span>
                 </p>
-                <p className="text-sm text-gray-500">1 tài khoản/cửa hàng/tháng</p>
+                <p className="text-sm text-gray-500">3 tài khoản/cửa hàng/tháng</p>
                 <p className="text-sm text-gray-500 mt-1">{plan.extra}</p>
                 <ul className="text-left text-gray-600 mt-6 space-y-2">
                   {plan.features.map((feature, i) => (
